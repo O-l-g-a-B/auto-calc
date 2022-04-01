@@ -1,0 +1,166 @@
+.body {
+    background-image: url(/styles/images/126123937_krasivuye_mashinuy_foto_1.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.page {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 10px rgb(115, 112, 112);
+    background-color: rgb(147, 156, 171);
+    color: rgb(11, 11, 122);
+    line-height: 1.2;
+    border-radius: 25px;
+}
+
+.auto-calc {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+.form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.total::after {
+    content: "\20BD";
+    margin-left: 10px;
+}
+
+
+.heading {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #111;
+}
+
+.switcher {
+    display: flex;
+}
+
+
+.switcher__item input {
+    display: none;
+}
+
+.switcher__item label {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: #111;
+    border: 2px solid rgb(11, 11, 122);
+    cursor: pointer;
+}
+
+.switcher__item label:hover {
+    background-color: rgba(0, 0, 255, 0.15);
+}
+
+.switcher__item label:not(:first-child) {
+    margin-left: -2px;
+}
+
+.switcher__item input:checked+label {
+    background-color: rgb(11, 11, 122);
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+#time {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 20px;
+    outline: none;
+}
+
+#volume {
+    font-size: 35px;
+    margin-left: 20px;
+    color: #282b31;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+#time::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #068323;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.option__item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 0.01em;
+}
+
+.option__item input {
+    width: 40px;
+
+}
+
+.option__item .checkmark {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.order {
+    margin-bottom: 5px;
+}
+
+.order output {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.total {
+    font-size: 40px;
+    font-weight: 400;
+    color: #282b31;
+    position: relative;
+}
+
+.total::after {
+    content: "\20BD";
+    margin-left: 10px;
+}
+
+.form__item {
+    line-height: 1em;
+}
