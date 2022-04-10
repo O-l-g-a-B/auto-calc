@@ -16,101 +16,99 @@
         <section class="page">
             <h1 class="auto-calc">Авто-калькулятор</h1>
             <form class="container form">
-                <form action="#" class="form form1">
-                    <div class="form__item">
-                        <h2 class="heading">Выберете марку машины</h2>
-                        <ul class="switcher">
-                            <li class="switcher__item">
-                                <input type="radio" name="marka" id="bmw" class="marka" value="bmw" />
-                                <label for="bmw">BMW</label>
-                            </li>
-                            <li class="switcher__item">
-                                <input type="radio" name="marka" id="mercedes" class="marka" value="mercedes"
-                                    checked="checked" />
-                                <label for="mercedes">Mercedes</label>
-                            </li>
-                            <li class="switcher__item">
-                                <input type="radio" name="marka" id="volkswagen" class="marka" value="volkswagen" />
-                                <label for="volkswagen">Volkswagen</label>
-                            </li>
-                            <li class="switcher__item">
-                                <input type="radio" name="marka" id="toyota" class="marka" value="toyota" />
-                                <label for="toyota">Toyota</label>
-                            </li>
-                        </ul>
+                <div class="form__item">
+                    <h2 class="heading">Выберете марку машины</h2>
+                    <ul class="switcher">
+                        <li class="switcher__item">
+                            <input type="radio" name="marka" id="bmw" class="marka" value="bmw" />
+                            <label for="bmw">BMW</label>
+                        </li>
+                        <li class="switcher__item">
+                            <input type="radio" name="marka" id="mercedes" class="marka" value="mercedes"
+                                checked="checked" />
+                            <label for="mercedes">Mercedes</label>
+                        </li>
+                        <li class="switcher__item">
+                            <input type="radio" name="marka" id="volkswagen" class="marka" value="volkswagen" />
+                            <label for="volkswagen">Volkswagen</label>
+                        </li>
+                        <li class="switcher__item">
+                            <input type="radio" name="marka" id="toyota" class="marka" value="toyota" />
+                            <label for="toyota">Toyota</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form__item">
+                    <h2 class="heading">Год выпуска</h2>
+                    <div class="slider">
+                        <input type="range" name="time" id="time" step="1" min="2000" max="2021" value="2000" />
+                        <output id="volume" for="time">2000</output>
                     </div>
+                </div>
+                <div class="form__item">
+                    <h2 class="heading">Дополнительные параметры</h2>
+                    <div class="form__item-option">
+                        <input type="checkbox" name="option1" id="option1" class="option" />
+                        <label for="option1" class="checkmarka"></label>
+                        <label for="option1">Защитная пленка от сколов/ Auto clear bra</label>
+                    </div>
+                    <div class="form__item-option">
+                        <input type="checkbox" name="option2" id="option2" class="option" />
+                        <label for="option2" class="checkmarka"></label>
+                        <label for="option2">Повышение мощности/ Тюнинг</label>
+                    </div>
+                    <div class="form__item-option">
+                        <input type="checkbox" name="option3" id="option3" class="option" />
+                        <label for="option3" class="checkmarka"></label>
+                        <label for="option3">Сезонные коврики в авто</label>
+                    </div>
+                    <div class="form__item-option">
+                        <input type="checkbox" name="option4" id="option4" class="option" />
+                        <label for="option4" class="checkmarka"></label>
+                        <label for="option4">Дополнительная страховка</label>
+                    </div>
+                    <select class="form-control fuel">
+                        <option id="petrol" value="petrol">Бензин</option>
+                        <option id="diesel" value="diesel">Дизельное топливо</option>
+                    </select>
+                    <h2 class="heading">Ваш заказ</h2>
+                    <div class="order">
+                        <span>Стоимость автомобиля:</span>
+                        <output id="order_marka">&#8212;</output>
+                    </div>
+                    <div class="order">
+                        <span>Год выпуска:</span>
+                        <output id="order_time">&#8212;</output>
+                    </div>
+                    <div class="order">
+                        <span>Дополнительные улуги:</span>
+                        <output id="order_option">&#8212;</output>
+                    </div>
+                    <div class="order">
+                        <span>Доп.стоимость по виду топлива:</span>
+                        <output id="order_fuel">&#8212;</output>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <h2 class="heading">Итоговая стоимость автомобиля</h2>
+                    <output class="total" id="total">0</output>
+                </div>
 
-                    <div class="form__item">
-                        <h2 class="heading">Год выпуска</h2>
-                        <div class="slider">
-                            <input type="range" name="time" id="time" step="1" min="2000" max="2021" value="2000" />
-                            <output id="volume" for="time">2000</output>
-                        </div>
-                    </div>
-                    <div class="form__item">
-                        <h2 class="heading">Дополнительные параметры</h2>
-                        <div class="option__item">
-                            <input type="checkbox" name="option1" id="option1" class="option" />
-                            <label for="option1" class="checkmarka"></label>
-                            <label for="option1">Защитная пленка от сколов/ Auto clear bra</label>
-                        </div>
-                        <div class="option__item">
-                            <input type="checkbox" name="option2" id="option2" class="option" />
-                            <label for="option2" class="checkmarka"></label>
-                            <label for="option2">Повышение мощности/ Тюнинг</label>
-                        </div>
-                        <div class="option__item">
-                            <input type="checkbox" name="option3" id="option3" class="option" />
-                            <label for="option3" class="checkmarka"></label>
-                            <label for="option3">Сезонные коврики в авто</label>
-                        </div>
-                        <div class="option__item">
-                            <input type="checkbox" name="option4" id="option4" class="option" />
-                            <label for="option4" class="checkmarka"></label>
-                            <label for="option4">Дополнительная страховка</label>
-                        </div>
-                        <select class="form-control fuel">
-                            <option name="fuel" id="petrol" value="petrol">Бензин</option>
-                            <option name="fuel" id="diesel" value="diesel">Дизельное топливо</option>
-                        </select>
-                        <h2 class="heading">Ваш заказ</h2>
-                        <div class="order">
-                            <span>Стоимость автомобиля:</span>
-                            <output id="order_marka">&#8212;</output>
-                        </div>
-                        <div class="order">
-                            <span>Год выпуска:</span>
-                            <output id="order_time">&#8212;</output>
-                        </div>
-                        <div class="order">
-                            <span>Дополнительные улуги:</span>
-                            <output id="order_option">&#8212;</output>
-                        </div>
-                        <div class="order">
-                            <span>Тип топлива:</span>
-                            <output id="order_fuel">&#8212;</output>
-                        </div>
-                    </div>
-                    <div class="form__item">
-                        <h2 class="heading">Итоговая стоимость автомобиля</h2>
-                        <output class="total" id="total">0</output>
-                    </div>
-
-                </form>
+            </form>
         </section>
-
-        </form>
-
+    </main>
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-        </script>
 
-        <script src="/styles/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <script src="/styles/index.js"></script>
 
 </body>
 

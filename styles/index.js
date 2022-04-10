@@ -21,8 +21,8 @@ option.forEach((el) => {
 });
 
 fuel.forEach((el) => {
-    el.addEventListener("click", fuelUpdate);
-  });
+  el.addEventListener("click", fuelUpdate);
+});
 
 function markaUpdate(e) {
   currentSet.marka = e.target.id;
@@ -50,9 +50,9 @@ function optionUpdate(e) {
 }
 
 function fuelUpdate(e) {
-    currentSet.fuel = e.target.value;
-    updatePrice();
-    orderUpdate();
+  currentSet.fuel = e.target.value;
+  updatePrice();
+  orderUpdate();
 }
 
 function updatePrice() {
@@ -65,18 +65,18 @@ function updatePrice() {
 
 function orderUpdate() {
   orderTime.value = currentSet.time + " год";
-  
+
   orderMarka.value = currentSet.getMarkaPrice() + " \u{20BD}";
   orderOption.value = currentSet.getOptionPrice() + " \u{20BD}";
   orderFuel.value = currentSet.getFuelPrice();
 }
 
 const priceInfo = {
-    marka: {
-        bmw: 5000000,
-        mercedes: 4800000,
-        volkswagen: 4000000,
-        toyota: 4140000,
+  marka: {
+    bmw: 5000000,
+    mercedes: 4800000,
+    volkswagen: 4000000,
+    toyota: 4140000,
   },
   option: {
     option1: 10000,
@@ -91,7 +91,7 @@ const priceInfo = {
 };
 
 let currentSet = {
-    marka: "mercedes",
+  marka: "mercedes",
   time: 2000,
   option: [],
   fuel: "petrol",
@@ -109,8 +109,7 @@ let currentSet = {
   },
   getFuelPrice() {
     return priceInfo.fuel[this.fuel];
-    
-  },
-  
-};
 
+  },
+
+};

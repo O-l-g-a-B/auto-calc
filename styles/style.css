@@ -117,19 +117,19 @@ li {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
-.option__item {
+.form__item-option {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     line-height: 0.01em;
 }
 
-.option__item input {
+.form__item-option input {
     width: 40px;
 
 }
 
-.option__item .checkmark {
+.form__item-option .checkmark {
     display: block;
     width: 30px;
     height: 30px;
